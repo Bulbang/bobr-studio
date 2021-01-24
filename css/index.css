@@ -1,0 +1,382 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background: #e5e5e5;
+  }
+
+  .content{
+
+  }
+
+  .footer {
+
+    display: grid;
+    grid-template-rows: 1fr 300px;
+    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  
+  .polygon-left {
+    position: absolute;
+  }
+  
+  .polygon-right {
+    position: absolute;
+    left: calc(100% - 135px);
+  }
+
+  .welcome {
+
+    width: 100%;
+    height: 100px;
+    margin-top: 83px;
+  
+    font-family: "Alegreya Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    color: #000000;
+  }
+
+  .plans {
+    margin-top: -10px;
+    width: 100%;
+    height: 44px;
+  
+    font-family: "Alegreya Sans", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    color: #000000;
+  }
+  
+  .logo {
+    margin-top: 20px;
+    width: 100%;
+    height: 181.92px;
+    text-align: center;
+  }
+  
+  .name {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+  
+    font-family: "Alegreya Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 106px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    color: #000000;
+  }
+  
+  hr.special {
+    top: 561px;
+    width: 100%;
+    border: 1px solid #742092;
+ 
+  }
+  
+  .description-1 {
+    display: flex;
+    margin-top: -15px;
+    width: 100%;
+    height: 100px;
+    top: 511px;
+  
+    font-family: "Alegreya Sans", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .description-1 .text {
+    background-color: #e5e5e5;
+    padding-left: 15px;
+    padding-right: 15px;
+    white-space: nowrap;
+  }
+  
+  .description-2 {
+    margin-top: -30px;
+    width: 100%;
+    height: 44px;
+    top: 584px;
+  
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    color: #000000;
+  }
+
+  .ellipse-row{
+    position: relative;
+    width: 100%;
+  }
+
+  .ellipse {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 43px;
+    bottom: -165px;
+    background-image: url("../img/Ellipse.svg");
+    background-repeat: no-repeat;
+    width: 554px;
+    height: 400px;
+  }
+  
+  .ellipse ul {
+    list-style-type: none;
+  }
+  
+  .ellipse li {
+    margin-top: 41px;
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height */
+  
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 204px;
+  
+    color: #000000;
+  }
+  
+  .ellipse img {
+    position: absolute;
+    left: 119px;
+  }
+  
+  .ellipse ul a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .waves {
+    width: 100%;
+    background-image: url('./../img/waves.svg');
+    background-size: cover;
+    z-index: 1;
+
+  }
+  
+  .waves img {
+    width: 100%;
+  }
+
+@media screen and (min-height: 1441px){
+    .ellipse{
+        bottom: -230px;
+    }
+}
+
+  /*LAPTOPS*/
+@media screen and (min-width: 1240px) and (max-width: 1440px) {
+    .welcome {
+      font-size: 60px;
+    }
+    .plans {
+      font-size: 30px;
+    }
+  
+    .name {
+      font-size: 66px;
+    }
+  
+    .description-1 {
+      font-size: 30px;
+    }
+  
+    .description-2 {
+      font-size: 24px;
+    }
+  
+    .footer {
+      top: auto;
+      bottom: 0px;
+    }
+  
+    .ellipse li {
+      font-size: 30px;
+      margin-left: 153px;
+      margin-top: 30px;
+      
+    }
+  
+    .ellipse img {
+      height: 45px;
+      width: 45px;
+      left: 89.25px;
+    }
+    .ellipse {
+      width: 415.5px;
+      height: 300px;
+      background-size: contain;
+    }
+  }
+  
+  /* TABLETS */
+  @media screen and (min-width: 1024px) and (max-width: 1240px) {
+    .ellipse li {
+
+        line-height: 24px;
+      }
+    
+      .ellipse img {
+        right: 0px;
+      }
+      .ellipse li{
+          line-height: 50px;
+      }
+      .ellipse {
+
+        bottom: -120px;
+
+        background-size: contain;
+
+      }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .welcome {
+      font-size: 60px;
+    }
+    .plans {
+      font-size: 30px;
+    }
+  
+    .name {
+      font-size: 66px;
+    }
+  
+    .description-1 {
+      font-size: 30px;
+    }
+  
+    .description-2 {
+      font-size: 24px;
+    }
+    
+    .ellipse li {
+      font-size: 30px;
+      margin-left: 155px;
+    }
+  
+    .ellipse img {
+        left: 95px;
+      height: 45px;
+      width: 45px;
+    }
+    .ellipse {
+      width: 415.5px;
+      height: 300px;
+      background-size: contain;
+
+    }
+  } 
+  /*MOBILE PHONES*/
+  @media screen and (max-width: 768px) {
+    .polygon-left {
+      width: 93.75px;
+    }
+  
+    .polygon-right {
+      width: 101.25px;
+      left: calc(100% - 101.25px);
+    }
+  
+    .welcome {
+      font-size: 40px;
+    }
+    .plans {
+      font-size: 20px;
+    }
+  
+    .logo {
+      padding-right: 20px;
+    }
+  
+    .name {
+      font-size: 44px;
+    }
+  
+    .description-1 {
+      font-size: 20px;
+    }
+  
+    .description-2 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+  
+  
+    .ellipse li {
+      font-size: 20px;
+      margin-top: 25px;
+      margin-left: 102px;
+      line-height: 24px;
+    }
+  
+    .ellipse img {
+      height: 30px;
+      width: 30px;
+      left: 59.5px;
+    }
+    .ellipse {
+      width: 277px;
+      bottom: -120px;
+      height: 200px;
+      background-size: contain;
+
+    }
+  }
