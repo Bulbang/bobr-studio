@@ -17,7 +17,7 @@ body {
 
 footer {
   display: grid;
-  grid-template-rows: 1fr 300px;
+  grid-template-rows: 1fr 180px;
   width: 100%;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -231,6 +231,7 @@ picture {
     left: 89.25px;
   }
   figure {
+    bottom: -150px;
     width: 415.5px;
     height: 300px;
     background-size: contain;
@@ -250,7 +251,7 @@ picture {
     line-height: 50px;
   }
   figure {
-    bottom: -110px;
+    bottom: -120px;
 
     background-size: contain;
   }
@@ -289,7 +290,7 @@ picture {
   figure {
     width: 415.5px;
     height: 300px;
-    bottom: -140px;
+    bottom: -100px;
     background-size: contain;
   }
 }
@@ -342,7 +343,7 @@ picture {
   }
   figure {
     width: 277px;
-    bottom: -120px;
+    bottom: -90px;
     height: 200px;
     background-size: contain;
   }
